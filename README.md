@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto de Subida de Archivos con Next.js y React
 
-## Getting Started
+Este proyecto es una aplicación web que permite a los usuarios subir archivos a un servidor utilizando Next.js y React. La aplicación incluye un formulario de subida de archivos y un endpoint API para manejar la subida y almacenamiento de los archivos en el servidor.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Subida de Archivos**: Los usuarios pueden seleccionar y subir archivos desde su dispositivo.
+- **Vista Previa de Imágenes**: Muestra una vista previa de la imagen seleccionada antes de subirla.
+- **Almacenamiento en el Servidor**: Los archivos subidos se almacenan en el servidor en una ubicación específica.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura del Proyecto
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `src/app/layout.js`: Configuración del layout principal de la aplicación.
+- `src/app/api/upload/route.jsx`: Endpoint API para manejar la subida de archivos.
+- `src/app/components/form/form.jsx`: Componente de React que contiene el formulario de subida de archivos.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalación
 
-## Learn More
+1. Clona el repositorio:
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+2. Navega al directorio del proyecto:
+    ```bash
+    cd <NOMBRE_DEL_PROYECTO>
+    ```
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+## Uso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+2. Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
