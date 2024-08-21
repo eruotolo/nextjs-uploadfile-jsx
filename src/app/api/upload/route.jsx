@@ -1,5 +1,5 @@
 import { writeFile } from 'fs/promises';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import path from 'path';
 
 export async function POST(request) {
